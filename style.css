@@ -1,0 +1,42 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+.intro{
+display: flex;
+color: #fff;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(bckg.jpeg);
+background-size: cover;
+padding-top: 50vh;
+padding-left: 20%;
+}
+.intro h1{
+font-size: 70px;
+font-weight: 400;
+}
+.typing{
+position: relative;
+margin-left: 10px;
+}
+.typing::after{
+content: "";
+position: absolute;
+right: -8px;
+top: 9px;
+width: 1px;
+height: 13%;
+border-left: 2px solid #fff;
+animation: blink 1s infinite ease;
+}
+
+@keyframes blink{
+0%{
+opacity: 0;
+}
+100%{
+opacity: 1;
+}
+}
